@@ -12,7 +12,34 @@
 </head>
 
 <body>
-  <script src="app/script.js" type="module"></script>
+  <div class="app">
+    <form class="form">
+      <input type="hidden" class="form__input form__input--type" name="type" value="">
+      <input type="hidden" class="form__input form__input--location" name="location" value="">
+      <input type="hidden" class="form__input form__input--materiality" name="materiality" value="">
+    </form>
+
+    <nav class="form__filter">
+      <ul>
+        <li>
+          <button class="form__button" data-category="type">Hospitality</button>
+        </li>
+        <li>
+          <button class="form__button" data-category="type">Home</button>
+        </li>
+        <li>
+          <button class="form__button" data-category="location">Bali</button>
+        </li>
+        <li>
+          <button class="form__button" data-category="materiality">Bamboo</button>
+        </li>
+        <li>
+          <button class="form__button" data-category="materiality">Wood</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script src="app/script.js"></script>
 </body>
 
 </html>
